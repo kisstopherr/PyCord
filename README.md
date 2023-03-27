@@ -26,7 +26,7 @@ For example, you could send a message like this:
 
 Or an example of multi line code you can do:
 
-.python ```x = "Hello World" 
+.python \```x = "Hello World"
 print(x)```
 
 
