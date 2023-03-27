@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import subprocess
 
-TOKEN = 'MTA4MTk4MjUyOTcwNTM1MzMwNg.G0DVFB.w9AHS5JNEeO_ShF1TdSMGeX58Qr9qny--ePAtg'
+TOKEN = 'YOUR TOKEN'
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -17,7 +17,7 @@ async def on_ready():
 @client.command()
 async def python(ctx):
     code = ctx.message.content.split('```')[1]
-    process = subprocess.Popen(['C:\Program Files\Python310\python.exe', '-c', code], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(['PATH/TO/PYTHON.exe', '-c', code], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, errors = process.communicate()
     if output:
         await ctx.send(f"Output:\n```{output.decode('utf-8')}```")
@@ -25,6 +25,4 @@ async def python(ctx):
         await ctx.send(f"Errors:\n```{errors.decode('utf-8')}```")
 
 
-
-#C:\Program Files\Python310\python.exe
 client.run(TOKEN)
