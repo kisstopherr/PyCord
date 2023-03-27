@@ -22,7 +22,7 @@ To run Python code using the bot, simply send a message containing Python code t
 
 For example, you could send a message like this:
 
-.python print("Hello, world!")
+.python \```print("Hello, world!")```
 
 Or an example of multi line code you can do:
 
