@@ -28,8 +28,3 @@ Or an example of multi line code you can do:
 
 .python \```x = "Hello World"
 print(x)```
-
-
-# Contributing
-
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. We welcome contributions of all kinds, including bug reports, feature requests, and code improvements.
